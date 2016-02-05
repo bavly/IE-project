@@ -1,0 +1,619 @@
+	<html>
+		<head>
+			<meta charset='UTF-8'>
+			<link rel='stylesheet' href='css/bootstrap.css' type='text/css'>
+			<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css'>
+			<script src="js/jquery-1.11.1.min.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/plugins.js"></script>
+			<!--<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+			<script type="text/javascript">stLight.options({publisher: "c3dd2d18-4fcf-4e02-9701-5e68eaf80629", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
+			<link rel='stylesheet' href='css/style.css' type='text/css'>
+		</head>
+		<body>
+		<script type="text/javascript" src="js/jssor.slider.min.js"></script>
+		<!-- use jssor.slider.debug.js instead for debug -->
+
+		<!---------------------------------- SLIDESHOW ----------------------------------------->
+		<script>
+			jssor_1_slider_init = function() {
+
+				var jssor_1_SlideoTransitions = [
+					[{b:5500.0,d:3000.0,o:-1.0,r:240.0,e:{r:2.0}}],
+					[{b:-1.0,d:1.0,o:-1.0,c:{x:51.0,t:-51.0}},{b:0.0,d:1000.0,o:1.0,c:{x:-51.0,t:51.0},e:{o:7.0,c:{x:7.0,t:7.0}}}],
+					[{b:-1.0,d:1.0,o:-1.0,sX:9.0,sY:9.0},{b:1000.0,d:1000.0,o:1.0,sX:-9.0,sY:-9.0,e:{sX:2.0,sY:2.0}}],
+					[{b:-1.0,d:1.0,o:-1.0,r:-180.0,sX:9.0,sY:9.0},{b:2000.0,d:1000.0,o:1.0,r:180.0,sX:-9.0,sY:-9.0,e:{r:2.0,sX:2.0,sY:2.0}}],
+					[{b:-1.0,d:1.0,o:-1.0},{b:3000.0,d:2000.0,y:180.0,o:1.0,e:{y:16.0}}],
+					[{b:-1.0,d:1.0,o:-1.0,r:-150.0},{b:7500.0,d:1600.0,o:1.0,r:150.0,e:{r:3.0}}],
+					[{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+					[{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+					[{b:-1.0,d:1.0,o:-1.0,r:288.0,sX:9.0,sY:9.0},{b:9100.0,d:900.0,x:-1400.0,y:-660.0,o:1.0,r:-288.0,sX:-9.0,sY:-9.0,e:{r:6.0}},{b:10000.0,d:1600.0,x:-200.0,o:-1.0,e:{x:16.0}}]
+				];
+
+				var jssor_1_options = {
+					$AutoPlay: true,
+					$SlideDuration: 800,
+					$SlideEasing: $Jease$.$OutQuint,
+					$CaptionSliderOptions: {
+						$Class: $JssorCaptionSlideo$,
+						$Transitions: jssor_1_SlideoTransitions
+					},
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$
+					},
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$
+					}
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				//responsive code begin
+				//you can remove responsive code if you don't want the slider scales while window resizing
+				function ScaleSlider() {
+					var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+					if (refSize) {
+						refSize = Math.min(refSize, 1920);
+						jssor_1_slider.$ScaleWidth(refSize);
+					}
+					else {
+						window.setTimeout(ScaleSlider, 30);
+					}
+				}
+				ScaleSlider();
+				$Jssor$.$AddEvent(window, "load", ScaleSlider);
+				$Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+				$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+				//responsive code end
+			};
+		</script>
+		<!---------------------------------- SLIDESHOW ----------------------------------------->
+
+
+		<!--------------------------------------------------- Start Of  First Menu -------------------------------------------------------------->
+
+		<nav class="navbar navbar-inverse" role="navigation" >
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Download</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav navbar-right socialul">
+
+						<!------------- Font Awesome --------------->
+						<li><a href="#"><i class="social fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="social fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="social fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="social fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="social fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="social fa fa-youtube"></i></a></li>
+
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+			</nav>
+		</nav>
+		<!----------------------------------------------------- End Of Menu -------------------------------------------------------------->
+		<!----------------------------------------------------- Header Area -------------------------------------------------------------->
+		<!------  Left  ------>
+		<div class="logo-navbar">
+			<div class="col-md-4 text-center">
+				<img src="images/2.png" alt="">
+			</div>
+			<!------  right  ------>
+			<div class="col-md-8 text-center">
+				<img class="img-responsive" src="images/ads.jpg" alt="">
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!--------------------------------------------------- Start Of Second Menu -------------------------------------------------------------->
+		<nav class="navbar second-navbar" role="navigation" >
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right second">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#" class="second">Local News</a></li>
+							<li><a href="#">International News</a></li>
+							<li><a href="#">Champions</a></li>
+							<li><a href="#">Videos</a></li>
+							<li><a href="#">Images</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!----------------------------------------------------- End Of Menu -------------------------------------------------------------->
+			<!----------------------------------------------------- Start Of Overview -------------------------------------------------------->
+		<section class='last-news text-center'>
+			<div class='container'>
+				<div class="col-md-2 block">
+					<i class="fa fa-rocket"> &nbsp;&nbsp;&nbsp;&nbsp;Lastest News </i>
+				</div>
+				<div class="col-md-10">
+					<marquee><i class="fa fa-newspaper-o"> &nbsp;&nbsp;&nbsp;&nbsp;
+						lastest news lastest news lastest news lastest news lastest news lastest news lastest news lastest news lastest news
+					</i></marquee>
+				</div>
+			</div>
+		</section>
+
+		<!----------------------------------------------------- End Of Overview ---------------------------------------------------------->
+
+		<!----------------------------------------------------- Start Of Slideshow ---------------------------------------------------------->
+
+		<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+			<!-- Loading Screen -->
+			<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+			</div>
+			<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/foot1.jpg" />
+					<div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">KOORA NOW</div>
+					<div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;"><!--Know Latest News Second By Second For The Live Streaming--></div>
+					<div data-u="caption" data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">
+						<img src="img/c-phone.png" style="position: absolute; top: 0px; left: 0px; width: 445px; height: 300px;" />
+						<img src="img/c-jssor-slider.png" data-u="caption" data-t="1" style="position: absolute; top: 70px; left: 130px; width: 102px; height: 78px;" />
+						<img src="img/c-text.png" data-u="caption" data-t="2" style="position: absolute; top: 153px; left: 163px; width: 80px; height: 53px;" />
+						<img src="img/c-navigator.png" data-u="caption" data-t="4" style="position: absolute; top: -123px; left: 121px; width: 200px; height: 155px;" />
+					</div>
+					<div data-u="caption" data-t="5" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+						<img src="img/c-phone-horizontal.png" style="position: absolute; top: 0px; left: 0px; width: 470px; height: 220px;" />
+						<div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">
+							<img src="img/c-slide-1.jpg" data-u="caption" data-t="6" style="position: absolute; top: 0px; left: 0px; width: 379px; height: 213px;" />
+							<img src="img/c-slide-3.jpg" data-u="caption" data-t="7" style="position: absolute; top: 0px; left: 379px; width: 379px; height: 213px;" />
+						</div>
+						<img src="img/c-navigator-horizontal.png" style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px;" />
+						<img src="img/c-finger-pointing.png" data-u="caption" data-t="8" style="position: absolute; top: 740px; left: 1600px; width: 257px; height: 300px;" />
+					</div>
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/purple.jpg" />
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/blue.jpg" />
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/c-slide-1.jpg" />
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/foot7.jpg" />
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/foot4.jpg" />
+				</div>
+				<div data-p="225.00" style="display: none;">
+					<img data-u="image" src="img/foot8.jpg" />
+				</div>
+			</div>
+			<!-- Bullet Navigator -->
+			<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+				<!-- bullet navigator item prototype -->
+				<div data-u="prototype" style="width:16px;height:16px;"></div>
+			</div>
+			<!-- Arrow Navigator -->
+			<span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+			<span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+			<a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+		</div>
+
+
+
+		<!------------------------  Images with hover ---------------------------------------->
+		<section class="images">
+			<div class="container">
+				<div class="col-md-6 big-thumb text-left">
+					<div class="thumbnail">
+						<div class="caption">
+							<h4>Thumbnail Headline</h4>
+							<p>short thumbnail description</p>
+							<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">View</a>
+							<a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+						</div>
+						<img class="img-responsive big-img" src="images/foot1.jpg" alt="...">
+					</div>
+				</div>
+				<div class="col-md-6 text-left">
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4>Thumbnail Headline</h4>
+									<p>short thumbnail description</p>
+									<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">View</a>
+										<a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+								</div>
+								<img class="img-responsive thumb" src="images/foot2.jpg" alt="...">
+							</div>
+						</div>
+						<div class="col-md-6 text-left">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4>Thumbnail Headline</h4>
+									<p>short thumbnail description</p>
+									<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">View</a>
+										<a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+								</div>
+								<img class="img-responsive thumb" src="images/foot3.jpg" alt="...">
+							</div>
+						</div>
+						<div class="col-md-6 text-left">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4>Thumbnail Headline</h4>
+									<p>short thumbnail description</p>
+									<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">View</a>
+										<a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+								</div>
+								<img class="img-responsive thumb" src="images/foot4.jpg" alt="...">
+							</div>
+						</div>
+						<div class="col-md-6 text-left">
+							<div class="thumbnail">
+								<div class="caption">
+									<h4>Thumbnail Headline</h4>
+									<p>short thumbnail description</p>
+									<p><a href="" class="label label-danger" rel="tooltip" title="Zoom">View</a>
+										<a href="" class="label label-default" rel="tooltip" title="Download now">Download</a></p>
+								</div>
+								<img class="img-responsive thumb" src="images/foot5.jpg" alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------------------------------------------------------------------------------------------->
+
+		<section class="news">
+			<div class="container">
+				<div class="col-md-8">
+					<!------------------------  International News  --------------------------------------->
+					<div class="head">
+						<div class="col-md-3 title international">
+							International News
+						</div>
+						<div class="col-md-offset-6 col-md-2 title-right" style="margin-right: -20px">
+							<a href="">View All&nbsp;&nbsp; <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+					<div class="content">
+						<div class="col-md-6">
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot1.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot5.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot2.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+						</div>
+						<div class="col-md-6">
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot3.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot4.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot7.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+						</div>
+					</div>
+					<!------------------------  International News  --------------------------------------->
+					<div class="clearfix"></div>
+					<!--------------------------------  Local News  --------------------------------------->
+					<div class="head local">
+						<div class="col-md-3 title">
+							Local News
+						</div>
+						<div class="col-md-offset-7 col-md-2 title-right">
+							<a href="">View All&nbsp;&nbsp; <i class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+					<div class="content">
+						<div class="col-md-6">
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot1.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot5.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot2.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+						</div>
+						<div class="col-md-6">
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot3.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot4.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+							<div class='media'>
+								<a href='#' class='pull-left'>
+									<img class='media-object' src='images/foot7.jpg'/>
+								</a>
+								<div class='media-body'>
+									<h4 class='media-heading'> Priemer League </h4>
+									this is text about what they say about programming language ..etc
+								</div>
+							</div> <!--- End Of Media -->
+						</div>
+					</div>
+					<!------------------------  Local News  --------------------------------------->
+				</div>
+
+				<!---------------- Social Links ------------------------------------------------->
+				<div class="col-md-4 social">
+					<div class="head">
+						<div class="col-md-3 title1">
+							Social media
+						</div>
+					</div>
+					<div class="social-content">
+						<div class="col-md-6 fb social-link">
+							<a href=""><i class="fa fa-2x fa-facebook"></i>&nbsp;&nbsp;Facebook</a>
+						</div>
+						<div class="col-md-6 tw social-link">
+							<a href=""><i class="fa fa-2x fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+						</div>
+						<div class="col-md-6 go social-link">
+							<a href=""><i class="fa fa-2x fa-google-plus"></i>&nbsp;&nbsp;Google +</a>
+						</div>
+						<div class="col-md-6 li social-link">
+							<a href=""><i class="fa fa-2x fa-linkedin"></i>&nbsp;&nbsp;Linked-in</a>
+						</div>
+						<div class="col-md-6 pi social-link">
+							<a href=""><i class="fa fa-2x fa-pinterest"></i>&nbsp;&nbsp;Pinterest</a>
+						</div>
+						<div class="col-md-6 yt social-link">
+							<a href=""><i class="fa fa-2x fa-youtube"></i>&nbsp;&nbsp;Youtube</a>
+						</div>
+					</div>  <!-- End Of social media -->
+
+					<!------------------  ADS ---------------------------------------->
+					<div class="clearfix"></div>
+
+					<div class="adsense">
+						<div class="head" style="margin-top: 30px; margin-bottom: 20px">
+							<div class="col-md-3 title1">
+								Advertisements
+							</div>
+						</div>
+						<div class="content">
+							<img class="img-responsive img-ads" src="images/ads.png" alt="">
+						</div>
+					</div>   <!-- End Of Right Ads -->
+
+					<div class="clearfix"></div>
+
+					<div class="subscribe">
+						<div class="head" style="margin-top: 30px; margin-bottom: 20px">
+							<div class="col-md-3 title1">
+								Subscribe
+							</div>
+						</div>
+						<div class="content">
+							<div class="form">
+								<p>Never miss our latest news, subscribe here for free</p>
+								<div class="inner-addon right-addon">
+									<i class="glyphicon glyphicon-send"></i>
+									<input type="text" class="form-control" />
+								</div>
+							</div>
+						</div>
+					</div>   <!-- End Of Right Ads -->
+
+				</div>  <!-- End Of Right Sidebar -->
+			</div>
+		</section>
+
+		<!----------------------------------------------------- End Of sponser ----------------------------------------------------------->
+		<section class='sponser text-center'>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-lg-3'>
+						<img src='images/logo1.png'>
+					</div>
+					<div class='col-lg-3'>
+						<img src='images/logo2.png'>
+					</div>
+					<div class='col-lg-3'>
+						<img src='images/logo4.png'>
+					</div>
+					<div class='col-lg-3'>
+						<img src='images/logo5.png'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!----------------------------------------------------- End Of sponser ----------------------------------------------------------->
+
+		<section class="footer">
+			<div class="container">
+				<div class="col-md-4">
+					<div class="head">
+						<div class="title1" style="margin-bottom: 20px">
+							About us
+						</div>
+						<div class="content">
+							<img src="images/2.png" alt="" style="margin-bottom: 15px">
+							<p>
+								lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+								lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+								lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="head">
+						<div class="title1">
+							Categories
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="head">
+						<div class="title1" style="width:170px">
+							Latest Posts
+						</div>
+					</div>
+					<div class='media'>
+						<a href='#' class='pull-left'>
+							<img class='media-object' src='images/foot5.jpg' />
+						</a>
+						<div class='media-body'>
+							<h4 class='media-heading'> Priemer League </h4>
+							this is text about what they say about programming language ..etc
+						</div>
+					</div> <!--- End Of Media -->
+					<div class='media'>
+						<a href='#' class='pull-left'>
+							<img class='media-object' src='images/foot1.jpg' />
+						</a>
+						<div class='media-body'>
+							<h4 class='media-heading'> Uefa champions league </h4>
+							this is text about what they say about programming language ..etc
+						</div>
+					</div> <!--- End Of Media -->
+					<div class='media'>
+						<a href='#' class='pull-left'>
+							<img class='media-object' src='images/foot2.jpg' />
+						</a>
+						<div class='media-body'>
+							<h4 class='media-heading'> Spanish league </h4>
+							this is text about what they say about programming language ..etc
+						</div>
+					</div> <!--- End Of Media -->
+				</div>
+			</div>
+		</section>
+
+
+
+		<script>
+			jssor_1_slider_init();
+		</script>
+
+		</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

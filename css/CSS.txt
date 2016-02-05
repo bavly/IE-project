@@ -1,0 +1,89 @@
+
+
+/*   Active Link  */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+	background:#E41B17;
+}
+.navbar
+{
+	min-height:70px;
+}
+.navbar-toggle 
+{
+	margin-top:15px;
+}
+/* Normal Link*/
+.navbar-inverse .navbar-nav > li > a
+{
+	color:#BBB;
+	font-size:16px;
+}
+/*  Brand Name  */
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand 
+{
+	color:#BBB;
+	margin-left:20px;
+	font-size:30px;
+	padding-top:25px;
+	padding-bottom:25px;
+	line-height:10px;
+}
+
+/* DropDown  */
+.navbar-nav > li > .dropdown-menu 
+{
+	background:#333;
+	width:150px;
+	border-top:3px solid #E41B17
+}
+.navbar-right .dropdown-menu
+{
+	right:auto;
+	left:0;
+}
+.navbar-nav.navbar-right:last-child 
+{
+	margin-right:50px;
+}
+.navbar-inverse .navbar-nav > li > a
+{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.dropdown-menu > li > a
+{
+	color:#FFF;
+	padding:7px 20px;
+	-webkit-transition:padding .5s ease;
+	-moz-transition:padding .5s ease;
+	-o-transition:padding .5s ease;
+	transition:padding .5s ease;
+}
+.dropdown-menu > li > a:hover
+
+{
+	background:#E41B17;
+	color:#FFF;
+	padding-left:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
